@@ -1,0 +1,25 @@
+{
+  "name": "reqio",
+  "version": "0.0.1",
+  "description": "A simple async requests library using promises",
+  "main": "index.js",
+  "browser": {
+    "./lib/request.js": "./lib/request.browser.js"
+  },
+  "scripts": {
+    "test": "mocha test/index",
+    "browserify-test": "browserify test/browser.js -o test/browser.bundle.js --noparse=expect.js"
+  },
+  "author": "Radomír Žemlička <info@razem.cz> (http://razem.cz)",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Razem/Reqio.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "expect.js": "~0.3.1",
+    "mocha": "^2.2.5"
+  }
+}
