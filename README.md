@@ -15,8 +15,8 @@ Reqio.setQs(myQsStringify);
 ## Documentation:
 ```
 Reqio
-  .load(url, options) -> Promise
-  .loadJSON(url, options) -> Promise
+  .load(url, options?) -> Promise
+  .loadJSON(url, options?) -> Promise
   .loadScript(url, get: String | Object) -> Promise
     * Available only in the browser
   .loadJSONP(url, get: String | Object) -> Promise
@@ -26,9 +26,9 @@ Reqio
   .setQs(fn(obj) -> String)
 
 options: {
-  get: String | Object
-  post: String | Object
-  headers: Object
+  get?: String | Object
+  post?: String | Object
+  headers?: Object
 }
 ```
 
